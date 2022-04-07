@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIVO Y NEGATIVO</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <script>
+        function pos (){
+        var numero=Number(document.getElementById('num').value)
+        if (numero>=0)
+        document.getElementById('snum').value="positivo"
+        else if (numero<0)
+        document.getElementById('snum').value="neutro"
+    }
+        </script>
+    <div>  
+    <h1 class="encabezado">POSITIVO O NEGATIVO</h1>
+</div>
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio1.html">ejercicio1</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+   
+        <div>
+            <p><br>
+                Elabore un algoritmo que lea un número e indique si este es positivo o negativo.   
+            </p>
+        </div>
+        ingrese un numero<input type="text" id="num" >  <br><br>
+        el numero es <input type="text" id="snum" > <br> 
+        <input type="button" value="calcular" onclick=" pos ()">
+    
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA
+        </div>
+</body>
+</html>

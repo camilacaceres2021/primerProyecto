@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPITAL EN EL BANCO</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <script>
+    function capital () {
+    var c=Number(document.getElementById('cap1').value)
+    var toc=(c*100)/2 
+    document.getElementById('tc').value=toc
+    }
+    </script>
+    <div>  
+    <h1 class="encabezado">CAMPITAL EN EL BANCO</h1>
+</div>
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio1.html">ejercicio1</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+      <div>
+          <p><br>
+Suponga que un individuo desea invertir su capital en un banco y desea saber cuánto dinero 
+ganara después de un mes si el banco paga a razón de 2% mensual.
+          </p>
+      </div>
+      capital <input type="text" id="cap1" >  <br><br>
+      sus ganacian son <input type="text" id="tc" >pesos  <br> 
+      <input type="button" value="calcular" onclick="capital()">
+    
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA
+        </div>
+</body>
+</html>

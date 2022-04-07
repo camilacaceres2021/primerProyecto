@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salario</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script>
+        function algoritmo()
+        
+
+ {
+     let antiguedad, salario, utilidades;
+     antiguedad = parseFloat (document.formulario1.antiguedad.value);
+     salario = parseFloat (document.formulario1.salario.value);
+     utilidades=0;
+     if(antiguedad<1)
+         utilidades=0.05*salario;
+     if(antiguedad>=1&&antiguedad<2)
+         utilidades=0.07*salario;
+     if(antiguedad>=2&&antiguedad<5)
+         utilidades=0.1*salario;
+     if(antiguedad>=5&&antiguedad<10)
+         utilidades=0.15*salario;
+     if(antiguedad>=10)
+         utilidades=0.2*salario;
+     document.formulario1.utilidades.value = utilidades;
+ }
+     </script>
+</head>
+<body>
+    <div>  
+    <h1 class="encabezado">salario</h1>
+</div>
+
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio1.html">ejercicio1</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+    <div>
+        <p><br><br>
+            Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le
+            asigna como un porcentaje de su salario mensual que depende de su antigüedad en la
+            empresa de acuerdo con la siguiente tabla:
+    
+        </p>
+        <br>
+        <li>
+        <img src="imagenes/ejer1.png" alt="">
+        </li>
+         <br><br>
+    </div>
+    <form name="formulario1">
+        <table style="text-align: left; margin-left: auto; margin-right: auto;">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="antiguedad">Ingresa el valor de antiguedad:</label>
+                    </td>
+                    <td>
+                        <input name="antiguedad" required="required" step="0.000001" type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="salario">Ingresa el valor de salario:</label>
+                    </td>
+                    <td>
+                        <input name="salario" required="required" step="0.000001" type="number" />
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" rowspan="1">
+                        <input value="Procesar" type="button" onclick="algoritmo();" />
+                        <input type="reset" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="utilidades">Valor de utilidades:</label>
+                    </td>
+                    <td>
+                        <input name="utilidades" step="0.000001" type="number" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+  
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA 
+        </div>
+</body>
+</html>

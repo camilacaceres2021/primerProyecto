@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYOR A 10</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <script>
+    function cuartaParte(){
+    var numer1= Number(document.getElementById('numero1').value) 
+    if(numer1>=10){
+        var num= numer1  * 3
+    document.getElementById('res').value=num
+    }
+    else if (numer1<10){
+    var num =numer1 / 4
+    document.getElementById('res').value=num
+    }
+    }
+    </script>
+    <div>  
+    <h1 class="encabezado">MAYOR A 10</h1>
+</div>
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio1.html">ejercicio1</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+   
+      <div>
+          <p><br>
+Confeccione un algoritmo que lea un número y si este es mayor o igual a 10 escriba el triple <br>
+de este, de lo contrario la cuarta parte de este.
+          </p>
+      </div>
+      escriba el numero <input type="text" id="numero1"><br>
+      triple o cuarta parte <input type="text" id="res"><br>
+      <input type="button" value="ejecutar" onclick="cuartaParte()">
+    
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA
+        </div>
+</body>
+</html>

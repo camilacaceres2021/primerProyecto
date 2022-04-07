@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUMERO ENTERO</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <script>
+    function digitos(){
+    var numero=(document.getElementById('num').value)
+    
+    if(numero<10){
+        document.getElementById('cifras').value=numero+("el numero tiene una cifra")     
+    }
+    else if (numero<100){
+    document.getElementById('cifras').value=numero+("el numero tiene dos cifras")
+    }
+    else if (numero<1000){
+        document.getElementById('cifras').value=numero+("el numero tiene tres cifras")     
+    }
+    else{
+        document.getElementById('cifras').value=("el numero tiene de tres cifras")
+    }
+    }
+    </script>
+    <div>  
+    <h1 class="encabezado">NUMEROS DE DIFERENTES SIFRAS</h1>
+</div>
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio1.html">ejercicio1</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+      <div>
+          <p><br><br>
+            Elabore el algoritmo que indique si un numero entero leído por teclado tiene 1, 2, 3 o más <br>
+            cifras, el programa debe mostrar en texto cuantas cifras tiene el numero insertado, ejemplo <br>
+            si el número que se ingreso fue el 455, el mensaje debe decir: “El numero 455 tiene tres 
+            cifras.”
+            <br>
+          </p>
+      </di>
+      <br>
+      <input type="text " id="num">
+      cifras del numero <input type="text" id="cifras">
+      <input type="button" value="ejecutar" onclick="digitos()">
+    
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA 
+        </div>
+</body>
+</html>

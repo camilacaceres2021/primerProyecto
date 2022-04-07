@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTAS</title>
+    <link  type="text/css" rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+
+    <script>
+       function prome (){
+    var uno, dos, tres
+     var uno=Number(document.getElementById('uno').value)
+     var dos=Number(document.getElementById('dos').value)
+     var tres=Number(document.getElementById('tres').value)
+     var respuest=(uno+dos+tres)/3
+     document.getElementById('promedio').value=respuest
+} 
+    </script>
+    <div>  
+    <h1 class="encabezado">ORGANIZAR NOTAS</h1>
+</div>
+
+    <div  class="inicio">
+        <h2>
+        <a href="index.html">inicio</a><br>
+        <a href="ejercicio2.html">ejercicio2</a><br>
+        <a href="ejercicio3.html">ejercicio3</a><br>
+        <a href="ejercicio4.html">ejercicio4</a><br>
+        <a href="ejercicio5.html">ejercicio5</a><br>
+        <a href="ejercicio6.html">ejercicio6</a><br>
+        <a href="ejercicio7.html">ejercicio7</a><br>
+        <a href="ejercicio8.html">ejercicio8</a><br>
+        <a href="ejercicio9.html">ejercicio9</a><br>
+        <a href="ejercicio10.html">ejercicio10</a><br>
+        <a href="ejercicio11.html">ejercicio11</a><br>
+        <a href="ejercicio12.html">ejercicio12</a><br>
+        <a href="ejercicio13.html">ejercicio13</a><br>
+        <a href="ejercicio14.html">ejercicio14</a><br>
+        <a href="ejercicio15.html">ejercicio15</a><br>
+    </h2>
+    </div>
+   <div>
+       <p><br>
+      
+            Realizar un script que dato tres notas decimales, muestre el promedio de sus notas.
+       </p><br>
+       digite su nota uno <input type="text" id="uno"><br>
+       digite su nota dos <input type="text" id="dos"><br>
+       digite su nota tres <input type="text" id="tres"><br>
+       promedio <input type="text" id="promedio">
+       <input type="button" value="calcular" onclick="prome()">
+   </div>
+
+    <div class="pie">
+        @ Derechos reservados CAMILA CACERES MORA
+        </div>
+        
+</body>
+</html>
